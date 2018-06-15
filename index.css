@@ -4,33 +4,34 @@ body{
   text-align: center;
 }
 h2{
+  margin-top: -50px;
   font-family: "Montserrat";
-  color: black;
+  font-size: 50px;
   text-align: center;
   margin-left: auto;
 }
+
 ul{
   list-style: none;
   text-align: right;
   margin-top: 50px;
-  padding-right: 20px;
-
+  margin-right: 170px;
 }
 
 #pp img {
   /* float: left; */
-  margin-left: -1100px;
+  margin-left: -700px;
   position: relative;
   top: -120px;
+  width: 8%;
   /*
-
   padding-left: 100px; */
 }
 
 li {
   width: 75px;
   height: 75px;
-  margin-top: 10px;
+  margin-top: 50px;
   margin-left: 10px;
   display: inline-block;
 }
@@ -41,8 +42,8 @@ section {
   text-align: center;
 }
 #block1 {
-    overflow: auto;
-    box-sizing: border-box;
+    overflow:auto;
+    box-sizing:border-box;
     display: inline-grid;
     width: 30%;
     height: 200px;
@@ -68,8 +69,8 @@ section {
 
 }
 #heading img{
-  width: 50%;
-  height:100px;
+  width: 32%;
+  height:10px;
   display: inline-block;
 }
 #pic h2{
@@ -89,6 +90,9 @@ section {
   float:center;
   flex: 25%;
 
+}
+#pic img:hover{
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 800px) {
@@ -116,15 +120,19 @@ section {
   margin-left: 1020px;
 }
 
-#footer {
-    clear: both;
-    position: relative;
-    z-index: 10;
-    height: 3em;
-    margin-top: -3em;
-    background-color: clear;
+.footer {
+  color: coral;
+  padding: 100px;
 }
-
-html[lang|="fr"]{
-  font-style:red;
+.footer a {
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
 }
